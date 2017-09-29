@@ -7,8 +7,8 @@ int main() {
     int x = 0;
     int y = 0;
     int z = 0;
-    std::cin >> x >>y >> z;
-    if ((x%2==1) && (y%2==1))
+    std::cin >> x >> y >> z;
+    if ((x%2 == 1) && (y%2 == 1))
     {
         std::cout <<"Odd numbers"<< std::endl;
     }
@@ -17,7 +17,7 @@ int main() {
         std::cout <<"one or two of numbers even"<< std::endl;
     }
     // x or y <20
-    if (((x<20)&&(y>=20)) || ((y<20)&&(x>=20)))
+    if (((x < 20) && (y >= 20)) || ((y < 20) && (x >= 20)))
     {
         std::cout <<"x<20 or y<20"<< std::endl;
     }
@@ -26,7 +26,7 @@ int main() {
         std::cout <<"x>20 and y>20"<< std::endl;
     }
     // x or y ==0
-    if ((x==0) || (y==0))
+    if ((x == 0) || (y == 0))
     {
         std::cout <<"x==0 or(and) y==0"<< std::endl;
     }
@@ -35,7 +35,7 @@ int main() {
         std::cout <<"x!=0 and y!=0"<< std::endl;
     }
     // x and y and z <0
-    if ((x<0) && (y<0) && (z<0))
+    if ((x < 0) && (y < 0) && (z < 0))
     {
         std::cout <<"x<0 and y<0 and z<0"<< std::endl;
     }
@@ -44,8 +44,8 @@ int main() {
         std::cout <<"x>=0 or y>=0 or z>=0"<< std::endl;
     }
     // x or y or z %5==0
-    if (((x%5==0) && (y%5!=0) && (z%5!=0)) || ((y%5==0) && (x%5!=0) && (z%5!=0))
-        || ((z%5==0) && (y%5!=0) && (x%5!=0))
+    if (((x% == 0) && (y%5 != 0) && (z%5 != 0)) || ((y%5 == 0) && (x%5 != 0) && (z%5 != 0))
+        || ((z%5 == 0) && (y%5 != 0) && (x%5 != 0))
     {
         std::cout <<"x%5==0 or y%5==0 or z%5==0"<< std::endl;
     }
@@ -54,7 +54,7 @@ int main() {
         std::cout <<"x%5!=0 and(or) y%5!=0 and(or) z%5!=0"<< std::endl;
     }
     // x or y or z %5==0
-    if ((x>100) || (y>100) || (z>100))
+    if ((x > 100) || (y > 100) || (z > 100))
     {
         std::cout <<"x>100 or y>100 or z>10=0"<< std::endl;
     }
@@ -74,13 +74,13 @@ int main() {
     int c = 0;
     int d = 0;
     std::cin >> par.first >> par.second;
-    if ((par.first==coor.first) && (par.second==coor.second))
+    if ((par.first == coor.first) && (par.second == coor.second))
     {
         std::cout << "Figures on the same place. Unbeliviable!!!!!" << std::endl;
     }
-    if((par.first==coor.first) || (par.second==coor.second))
+    if((par.first == coor.first) || (par.second == coor.second))
     {
-        if ((par.first==coor.first)&&(par.second==coor.second))
+        if ((par.first == coor.first) && (par.second == coor.second))
         {
             std::cout << "Figures on the same place. Unbeliviable!!!!!" << std::endl;
         }
