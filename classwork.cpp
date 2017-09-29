@@ -153,40 +153,40 @@ int main() {
     {
         std::cout << "pawn cannot beat this figure" << std::endl;
     }
-    for (a=1; a<=9; ++a)
+    for (a = 1; a <= 9; ++a)
     {
         std::cout << a << "*7=" << 7*a << std::endl;
     }
-    for (a=8; a <=15; ++a)
+    for (a = 8; a <= 15; ++a)
     {
-        for (b=8; b<=15; ++b)
+        for (b = 8; b <= 15; ++b)
         {
             std::cout << a << "*" << b << "=" << a*b
         }
     }
     std::cout << "print a" << std::endl;
     std::cin >> a;
-    for (c=a; c <=20; ++c)
+    for (c = a; c <= 20; ++c)
     {
-        for (b=a; b<=20; ++b)
+        for (b = a; b <= 20; ++b)
         {
             std::cout << c << "*" << b << "=" << c*b
         }
     }
     std::cout << "print b" << std::endl;
     std::cin >> b;
-    for (c=1; c<=b; ++c)
+    for (c = 1; c <= b; ++c)
     {
-        for (a=1; a<=b; ++a)
+        for (a = 1; a <= b; ++a)
         {
             std::cout << c << "*" << a << "=" << a*c
         }
     }
     std::cout << "print a, b" << std::endl;
     std::cin >> a >> b;
-    for (c=a; c<=b; ++c)
+    for (c = a; c <= b; ++c)
     {
-        for (d=a; d<=b; ++d)
+        for (d = a; d <= b; ++d)
         {
             std::cout << c << "*" << d << "=" << d*c
         }
