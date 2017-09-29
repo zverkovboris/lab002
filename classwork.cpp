@@ -74,11 +74,7 @@ int main() {
     int c = 0;
     int d = 0;
     std::cin >> par.first >> par.second;
-    if ((par.first == coor.first) && (par.second == coor.second))
-    {
-        std::cout << "Figures on the same place. Unbeliviable!!!!!" << std::endl;
-    }
-    if((par.first == coor.first) || (par.second == coor.second))
+    if ((par.first == coor.first) || (par.second == coor.second))
     {
         if ((par.first == coor.first) && (par.second == coor.second))
         {
@@ -88,11 +84,9 @@ int main() {
         {
             std::cout << "Rooks can beat the other figure" << std::endl;
         }
+    }
     else
     {
         std::cout << "Rooks cannot beat the other figure" << std::endl;
     }
-
-    }
-
 }
