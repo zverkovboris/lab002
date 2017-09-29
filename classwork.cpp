@@ -89,4 +89,5 @@ int main() {
     {
         std::cout << "Rooks cannot beat the other figure" << std::endl;
     }
+    return 0;
 }
