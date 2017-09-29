@@ -62,7 +62,7 @@ int main() {
     {
         std::cout <<"x<=100 and y<=100 and z<=100"<< std::endl;
     }
-    // chess
+    // chess rooks
     std::pair<int, int> coo;
     int a = 0;
     int b = 0;
@@ -87,6 +87,22 @@ int main() {
     else
     {
         std::cout << "Rooks cannot beat the other figure" << std::endl;
+    }
+    // elephant
+     if (abs(par.first - coo.first) == abs(par.second - coo.second))
+    {
+        if ((par.first == coo.first) && (par.second == coo.second))
+        {
+            std::cout << "Figures on the same place. Unbeliviable!!!!!" << std::endl;
+        }
+        else
+        {
+            std::cout << "Elephant can beat the other figure" << std::endl;
+        }
+    }
+    else
+    {
+        std::cout << "Elephant cannot beat the other figure" << std::endl;
     }
     return 0;
 }
