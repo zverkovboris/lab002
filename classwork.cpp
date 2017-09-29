@@ -44,8 +44,8 @@ int main() {
         std::cout <<"x>=0 or y>=0 or z>=0"<< std::endl;
     }
     // x or y or z %5==0
-    if (((x% == 0) && (y%5 != 0) && (z%5 != 0)) || ((y%5 == 0) && (x%5 != 0) && (z%5 != 0))
-        || ((z%5 == 0) && (y%5 != 0) && (x%5 != 0))
+    if (((x%5 == 0) && (y%5 != 0) && (z%5 != 0)) || ((y%5 == 0) && (x%5 != 0) && (z%5 != 0))
+        || ((z%5 == 0) && (y%5 != 0) && (x%5 != 0)))
     {
         std::cout <<"x%5==0 or y%5==0 or z%5==0"<< std::endl;
     }
@@ -63,20 +63,19 @@ int main() {
         std::cout <<"x<=100 and y<=100 and z<=100"<< std::endl;
     }
     // chess
-    std::pair<int, int> coor;
-
+    std::pair<int, int> coo;
     int a = 0;
     int b = 0;
     std::cout << "Enter coordinates of the rooks (a,b)(a gap b)" << std::endl;
-    std::cin >> coor.first >> coor.second;
+    std::cin >> coo.first >> coo.second;
     std::cout << "Enter coordinates of other figure (c,d)" << std::endl;
     std::pair<int, int> par;
     int c = 0;
     int d = 0;
     std::cin >> par.first >> par.second;
-    if ((par.first == coor.first) || (par.second == coor.second))
+    if ((par.first == coo.first) || (par.second == coo.second))
     {
-        if ((par.first == coor.first) && (par.second == coor.second))
+        if ((par.first == coo.first) && (par.second == coo.second))
         {
             std::cout << "Figures on the same place. Unbeliviable!!!!!" << std::endl;
         }
