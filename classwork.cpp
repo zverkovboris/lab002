@@ -89,7 +89,7 @@ int main() {
         std::cout << "Rooks cannot beat the other figure" << std::endl;
     }
     // elephant
-     if (abs(par.first - coo.first) == abs(par.second - coo.second))
+    if (abs(par.first - coo.first) == abs(par.second - coo.second))
     {
         if ((par.first == coo.first) && (par.second == coo.second))
         {
@@ -103,6 +103,22 @@ int main() {
     else
     {
         std::cout << "Elephant cannot beat the other figure" << std::endl;
+    }
+    // king
+    if ((abs(par.first - coo.first) <= 1) && (abs(par.second - coo.second) <= 1))
+    {
+        if ((par.first == coo.first) && (par.second == coo.second))
+        {
+            std::cout << "Figures on the same place. Unbeliviable!!!!!" << std::endl;
+        }
+        else
+        {
+            std::cout << "King can beat the other figure" << std::endl;
+        }
+    }
+    else
+    {
+        std::cout << "King cannot beat the other figure" << std::endl;
     }
     return 0;
 }
