@@ -45,8 +45,8 @@ int main()
         std::cout << "x>=0 or y>=0 or z>=0" << std::endl;
     }
     // x xor y xor z %5==0
-    if (((x % 5 == 0) && (y % 5 != 0) && (z % 5 != 0)) || ((y % 5 == 0) && (x % 5 != 0)
-        && (z % 5 != 0)) || ((z % 5 == 0) && (y % 5 != 0) && (x % 5 != 0)))
+    if (((x % 5 == 0) && (y % 5 != 0) && (z % 5 != 0)) || ((y % 5 == 0) && (x % 5 != 0) &&
+        (z % 5 != 0)) || ((z % 5 == 0) && (y % 5 != 0) && (x % 5 != 0)))
     {
         std::cout << "x%5==0 xor y%5==0 xor z%5==0" << std::endl;
     }
@@ -98,8 +98,8 @@ int main()
             std::cout << "Elephant cannot beat the other figure" << std::endl;
         }
         // queen
-        if ((abs(par.first - coo.first) == abs(par.second - coo.second))
-            || ((par.first == coo.first) || (par.second == coo.second)))
+        if ((abs(par.first - coo.first) == abs(par.second - coo.second)) ||
+            ((par.first == coo.first) || (par.second == coo.second)))
         {
             std::cout << "Queen can beat the other figure" << std::endl;
         }
