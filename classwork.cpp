@@ -44,8 +44,8 @@ int main() {
         std::cout <<"x>=0 or y>=0 or z>=0"<< std::endl;
     }
     // x or y or z %5==0
-    if (((x%5 == 0) && (y%5 != 0) && (z%5 != 0)) || ((y%5 == 0) && (x%5 != 0) && (z%5 != 0))
-        || ((z%5 == 0) && (y%5 != 0) && (x%5 != 0)))
+    if (((x%5 == 0) && (y%5 != 0) && (z%5 != 0)) || ((y%5 == 0) && (x%5 != 0) && (z%5 != 0)) ||
+        ((z%5 == 0) && (y%5 != 0) && (x%5 != 0)))
     {
         std::cout <<"x%5==0 or y%5==0 or z%5==0"<< std::endl;
     }
@@ -121,8 +121,8 @@ int main() {
         std::cout << "King cannot go to this place" << std::endl;
     }
     // queen
-    if ((abs(par.first - coo.first) == abs(par.second - coo.second))
-        || ((par.first == coo.first) || (par.second == coo.second)))
+    if ((abs(par.first - coo.first) == abs(par.second - coo.second)) ||
+        ((par.first == coo.first) || (par.second == coo.second)))
     {
         if ((par.first == coo.first) && (par.second == coo.second))
         {
